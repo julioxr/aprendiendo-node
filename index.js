@@ -38,11 +38,11 @@ app.post("/formulario", (req, res) => {
     if (!nombre || !apellido) {
         return res.redirect("/error.html");
     }
-    fs.writeFile(`${nombre}.txt`, apellido, (error) => {
+    fs.writeFile(`archivos/${nombre}.txt`, apellido, (error) => {
         if (error) {
             return res.send("Fallo al crear el archivo");
         }
-        res.send("Se creo el archivo");
+        res.download(__dirname + `/archivos/${nombre}.txt`);
     });
 });
 
