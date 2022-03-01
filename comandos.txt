@@ -1,4 +1,4 @@
-ejecutar archivo 
+Ejecutar archivo 
     -- node app.js
 
 Iniciar NPM
@@ -30,4 +30,16 @@ SCRIPT
     -- Dentro del package se agrega el script "start" o "dev" para iniciar el servidor
     -- "start: nodemon app.js"
     -- En consola los script se ejecutan como npm run start
-    
+
+APP.USE
+    -- Siempre que vea un USE es un middleware 
+    -- Un middleware esta entre medio del cliente y el servidor, puede interceptar
+       las consultas, y tomar decision sobre ellas. Valida tokens
+    -- Los middleware se ejecutan antes de las peticiones
+
+REQ.BODY 
+    -- Ejemplos de middlewares
+    -- express.json(...)
+    -- express.raw(...)
+    -- express.text(...)
+    -- express.urlencoded(...) no se necesita instalar bodyr.parser()
