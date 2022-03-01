@@ -1,0 +1,33 @@
+ejecutar archivo 
+    -- node app.js
+
+Iniciar NPM
+    -- npm init -y // Esto genera el archivo package.json
+
+Instalar depedencia
+    -- npm i {nombre modulo} si no se pone modulo se instalan todas
+
+Actualizar dependencias
+    -- npm update {opcional modulo}
+
+Eliminar dependencias
+    -- npm uninstall {nombre dependencia}
+
+NPX
+    -- NPX {dependencia} // Evita instalar de manera global. Ejecutas de una ej: NPX cowsay Hola
+
+/------------------------
+
+Dependencias principales
+
+/------------------------
+
+NODEMON
+    -- npm i -D nodemon // El -D es para que se instale solo en entorno de desarrollo
+    -- Se puede instalar global Nodemon
+
+SCRIPT
+    -- Dentro del package se agrega el script "start" o "dev" para iniciar el servidor
+    -- "start: nodemon app.js"
+    -- En consola los script se ejecutan como npm run start
+    
